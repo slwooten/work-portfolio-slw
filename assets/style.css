@@ -3,12 +3,17 @@
     padding: 0;
 }
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* Profile Section */
 
 .profile {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15rem;
+    margin-top: 4.5rem;
 }
 
 .me-pic {
@@ -18,11 +23,28 @@
     padding: 10px;
 }
 
+.me-pic img {
+    width: 180px;
+    height: auto;
+    border-radius: 100px;
+    border: solid gray 6px;
+    margin: 2rem;
+}
+
 .name {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
+}
+
+.name h1 {
+    font-size: 5rem;
+}
+
+.name h2 {
+    font-size: 2.5rem;
 }
 
 .links {
@@ -32,6 +54,15 @@
     align-items: center;
 }
 
+.links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: black;
+    padding: 12px;
+    border-radius: 8px;
+}
+
 /* About Me Section */
 
 .about-me {
@@ -39,6 +70,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15rem;
 }
 
 .about-me-content {
@@ -47,6 +79,32 @@
     justify-content: center;
     align-items: center;
 }
+
+.about-me-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.paragraphs {
+    max-width: 736px;
+    line-height: 2.5rem;
+}
+
+.paragraphs p {
+    margin-bottom: 2rem;
+}
+
+#little-header:hover,
+#history-header:hover,
+#hobbies-header:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
 
 /* Work Section */
 
