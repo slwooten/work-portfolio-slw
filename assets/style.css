@@ -1,6 +1,7 @@
 :root {
-    --primary-color: blue;
-    --secondary-color: red;
+    --primary-color: #121113;
+    --secondary-color: #f7f7f2;
+    --alt-color: #348aa7; 
 }
 
 * {
@@ -15,6 +16,8 @@ html {
 body {
     font-family: Cairo;
     font-weight: 500;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 p {
@@ -42,10 +45,12 @@ p {
 }
 
 .me-pic img {
-    width: 180px;
+    width: 200px;
     height: auto;
     border-radius: 50px;
-    border: solid black 6px;
+    padding: 4px;
+    background-color: var(--alt-color);
+    border: solid var(--primary-color) 2px;
     margin: 2rem;
 }
 
@@ -63,6 +68,8 @@ p {
 
 .name h2 {
     font-size: 2.5rem;
+    color: var(--alt-color);
+    font-style: italic;
 }
 
 .links {
@@ -75,10 +82,11 @@ p {
 .links a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: white;
-    background-color: black;
+    color: var(--secondary-color);
+    background-color: var(--alt-color);
     padding: 12px;
     border-radius: 8px;
+    border: solid var(--primary-color) 2px;
 }
 
 /* About Me Section */
@@ -124,7 +132,7 @@ p {
 #little-read-less,
 #history-read-less,
 #hobbies-read-less {
-    color: blue;
+    color: var(--alt-color);
     cursor: pointer;
 }
 
@@ -153,7 +161,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid black 2px;
+    border: solid var(--primary-color) 2px;
 }
 
 .buttons {
@@ -167,7 +175,7 @@ p {
 #weather-show, 
 #movie-show,
 #workday-show {
-    border: solid black 2px;
+    border: solid var(--primary-color) 2px;
     padding: 8px;
     opacity: 60%;;
 }
@@ -176,7 +184,7 @@ p {
 #movie-show:hover,
 #workday-show:hover {
     cursor: pointer;
-    color: black;
+    color: var(--primary-color);
     background-color: white;
     padding: 8px;
     opacity: 100%;
@@ -214,6 +222,6 @@ p {
 }
 
 .email {
-    background-color: blue;
+    background-color: var(--alt-color);
     padding: 8px;
 }
