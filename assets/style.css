@@ -3,8 +3,16 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: monospace;
+}
+
+.space-maker {
+    padding-top: 1px;
 }
 
 /* Profile Section */
@@ -71,6 +79,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 15rem;
+    margin-top: 8.5rem;
 }
 
 .about-me-content {
@@ -86,8 +95,13 @@ body {
 }
 
 .paragraphs {
-    max-width: 736px;
+    padding-left: 25rem;
+    padding-right: 25rem;
     line-height: 2.5rem;
+}
+
+.paragraphs h2 {
+    text-align: center;
 }
 
 .paragraphs p {
@@ -96,7 +110,10 @@ body {
 
 #little-header:hover,
 #history-header:hover,
-#hobbies-header:hover {
+#hobbies-header:hover,
+#little-read-less,
+#history-read-less,
+#hobbies-read-less {
     color: blue;
     cursor: pointer;
 }
@@ -113,34 +130,64 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15rem;
+}
+
+.work h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .work-pic-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
 }
 
-.other1,
-.other2 {
+/* .work-img {
+    border: solid black 2px;
+} */
+
+.db-description,
+.movie-description,
+.workday-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    max-height: 350px;
+    justify-content: space-between;
+    width: 1100px;
+    margin-bottom: 1rem;
 }
 
-.featured img {
-    padding: 20px 50px 20px 40px;
+
+
+#weather-show, 
+#movie-show,
+#workday-show {
+    border: solid black 2px;
+    padding: 8px;
+    opacity: 60%;;
 }
 
-.other1 img {
-    padding: 20px 50px 20px 40px;
+#weather-show:hover, 
+#movie-show:hover,
+#workday-show:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    padding: 8px;
+    opacity: 100%;
+    transition: ease 240ms;
 }
 
-.other2 img {
-    padding: 20px 50px 20px 40px;
-}
 
 /* Contact Section */
 
