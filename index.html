@@ -1,111 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seth Wooten Portfolio</title>
-    <link rel='stylesheet' href='assets/style.css' />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
     <main>
-        <!-- Profile Section -->
-        <section class='profile'>
-            <div class='me-pic'>
-                <img src='assets/images/profilepic.jpg' />
-            </div>
-            <div class='name'>
+        <section class='home'>
+            <div class="nameHeader">
                 <h1>Seth Wooten</h1>
-                <h2>Web Developer</h2>
             </div>
-            <div class='links'>
-                <a href='#aboutMe'>About Me</a>
-                <a href='#work'>Work</a>
-                <a href='#contact'>Contact</a>
+            <div class="primaryLinks">
+                <h3><a href="#">GitHub</a></h3>
+                <h3><a href="#">About Me</a></h3>
+                <h3><a href="#">LinkedIn</a></h3>
+            </div>
+            <div class="secondaryLinks">
+                <h3><a href="#">Resume</a></h3>
+                <h3><a href="#">Email</a></h3>
             </div>
         </section>
-        <!-- About Me Section -->
-        <div id="aboutMe" class='space-maker'></div>
-        <section class='about-me'>
-            <div class="about-me-content">
+        <section class="projects">
+            <div class="projectsHeader">
+                <h1>Projects</h1>
+            </div>
+            <div class="projectContent">
+                <div class="leftContent">
+                    <h3>Project Name</h3>
+                    <img src="https://via.placeholder.com/150" />
+                    <h4><a href="#">Live Preview</a></h4>
+                    <h4>Tecnologies Used</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="rightContent">
+                    <h3>My Role</h3>
+                    <p>Here is some sample text to hold place.</p>
+                    <h3>Project Difficulties</h3>
+                    <p>Here is some sample text to hold place.</p>
+                    <h3>Solutions</h3>
+                    <p>Here is some sample text to hold place.</p>
+                    <h3>Notable Features</h3>
+                    <ul>
+                        <li>Login</li>
+                        <li>Searchbar</li>
+                        <li>History</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="aboutMe">
+            <div class="aboutMeHeader">
                 <h1>About Me</h1>
-                <div class="paragraphs">
-                    <div class='get-to-know'>
-                        <h2>A little bit about me...</h2>
-                        <p>Hello! My name is Seth Wooten. First, I'd like to say thank you for <span id="little-header">...[Read more]</span > <span id="little-p" class="hide">taking the time to check out my portfolio. This is where you'll find some information about me, the projects I've worked on, links to those projects, and much more. Now for a little bit about me. I was born in Statesville, NC and grew up about 25 minutes north of Statesville in a town called Hamptonville. I spent my entire childhood living there with my mom, dad, and older brother. I graduated from North Iredell High School in the year of 2017 and attended Mitchell Community College where I obtained an Associate's Degree. I then transfered to the University of North Carolina at Charlotte where I graduated in the winter of 2021 with a Bachelor's Degree in Marketing. <span id="little-read-less">[Read less]</span></span></p>
-                    </div>
-                    <div class='history'>
-                        <h2>My history in Web Development...</h2>
-                        <p>I am currently progressing through a full-stack web development bootcamp <span id="history-header">...[Read more]</span><span id="history-p" class="hide">through the University of North Caroliina at Charlotte. During this bootcamp, I have developed numerous skills and learned to apply them in real world situations. I've worked on projects independently, as well as with a team. <span id="history-read-less">[Read less]</span></span></p>
-                    </div>
-                    <div class='hobbies'>
-                        <h2>A few of my hobbies...</h2>
-                        <p>Here is a lenghty paragraph about me<span id='hobbies-header'>...[Read more]</span><span id="hobbies-p" class="hide">here is some more text that is currently hidden. <span id="hobbies-read-less">[Read less]</span></span></p>
-                    </div>
-                </div>
             </div>
-        </section>
-        <!-- Work Section -->
-        <section id="work" class='work'>
-            <div class='work-header'>
-                <h1>Work</h1>
-            </div>
-            <div class='buttons'>
-                <h2 id='weather-show'>Weather Dashboard</h2>
-                <h2 id='movie-show'>Moovie Reviews</h2>
-                <h2 id='workday-show'>Work Day Scheduler</h2>
-            </div>
-            <div id="workImg" class="work-pic-container">
-                <div id='weather-db'>
-                    <div class='work-img'>
-                        <img src='assets/images/weatherdashboard.png' />
-                    </div>
-                    <div class='description'>
-                        <h2>Weather Dashboard</h2>
-                        <p>Here is the description for this project.</p>
-                    </div>
-                </div>
-                <div id='movie'>
-                    <div class='work-img'>
-                        <img src='assets/images/mooviereviews.png' />
-                    </div>
-                    <div class='description'>
-                        <h2>Moovie Reviews</h2>
-                        <p>Here is the description for this project.</p>
-                    </div>
-                </div>
-                <div id='workday-scheduler'>
-                    <div class='work-img'>
-                        <img src='assets/images/workdayscheduler.png' />
-                    </div>
-                    <div class='description'>
-                        <h2>Work Day Scheduler</h2>
-                        <p>Here is the description for this project.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="contact-header">
-                <h1>Contact</h1>
-            </div>
-            <div class='icons'>
-                <a href='https://www.google.com'>LinkedIn</a>
-                <a href='https://www.google.com'>GitHub</a>
-                <a href='https://www.google.com'>Twitter</a>
-            </div>
-            <div class='email'>
-                <h2>Email Me</h2>
+            <div class="aboutMeContent">
+                <h3>A little bit about me</h3>
+                <p>Hello! My name is Seth Wooten. First, I'd like to say thank you for taking the time to check out my portfolio. This is where you'll find some information about me, the projects I've worked on, links to those projects, and much more. Now for a little bit about me. I was born in Statesville, NC and grew up about 25 minutes north of Statesville in a town called Hamptonville. I spent my entire childhood living there with my mom, dad, and older brother. I graduated from North Iredell High School in the year of 2017 and attended Mitchell Community College where I obtained an Associate's Degree. I then transfered to the University of North Carolina at Charlotte where I graduated in the winter of 2021 with a Bachelor's Degree in Marketing.</p>
+                <h3>My history in Web Development</h3>
+                <p>I am currently progressing through a full-stack web development bootcamp through the University of North Caroliina at Charlotte. During this bootcamp, I have developed numerous skills and learned to apply them in real world situations. I've worked on projects independently, as well as with a team.</p>
+                <h3>A few of my hobbies</h3>
+                <p>Here's a lenghty paragraph about my hobbies.</p>
             </div>
         </section>
     </main>
-    <script src='assets/script.js'></script>
 </body>
-
 </html>
