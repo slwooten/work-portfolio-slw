@@ -2,3 +2,59 @@
     margin: 0;
     padding: 0;
 }
+
+/* styling the home section */
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameHeader {
+    text-align: center;
+}
+
+.primaryLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondaryLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* styling the projects section */
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectsHeader {
+    text-align: center;
+}
+
+.projectsContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* styling the about me section */
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMeHeader {
+    text-align: center;
+}
+
+.aboutMeContent {
+    text-align: center;
+}
+
