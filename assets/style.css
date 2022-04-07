@@ -1,6 +1,8 @@
 :root {
-    --black: #4a4f5a;
-    --white: #f0e6e6;
+    --black: black;
+    --white: white;
+    --lightGray: #f5f5f7;
+    --blue: #027fff; 
 }
 
 * {
@@ -8,152 +10,132 @@
     padding: 0;
 }
 
-h1 {
-    font-family: Noto Sans;
-}
-
-body {
-    font-family: Noto Sans;
-    color: var(--white);
-}
-
-/* styling the home section */
+/*  formats home section  */
 .home {
     display: flex;
     flex-direction: column;
-    border-bottom: solid .3rem black;
-    border-top: solid .3rem black;
-    padding-bottom: 6rem;
-    background-color: var(--black);
+    justify-content: center;
+    align-items: center;
 }
 
-.nameHeader {
+/*  styles headers  */
+.nameHeader { 
     text-align: center;
-    padding: 2rem;
 }
 
 .nameHeader h1 {
-    font-size: 4rem;
-    padding: 5rem 1rem 1rem 1rem;
-    font-weight: bolder;
+    font-size: 3rem;
+    padding: .7rem;
+    margin-top: 7rem;
+    font-family: Roboto;
+    font-weight: 400;
 }
 
-/* styling primary links */
+.nameHeader h2 {
+    padding: .7rem;
+    margin-bottom: 1.5rem;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+/*  styling for primary links */
 .primaryLinks {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    text-align: left;
 }
 
 .primaryLinks h3 {
-    margin: 1rem 2rem 1rem 2rem;
-    padding: 1rem;
-    border: solid black 2px;
-    border-radius: 5%;
-    box-shadow: 5px 10px 8px black;
-    transition: ease 400ms;
-    background-color: var(--white);
-}
-
-.primaryLinks h3:hover {
-    margin: 1rem 2rem 1rem 2rem;
-    padding: 1rem;
-    border: solid black 2px;
-    border-radius: 5%;
-    box-shadow: 5px 10px 8px gray;
-    transition: ease 400ms;
+    margin-bottom: 1rem;
 }
 
 .primaryLinks a {
     text-decoration: none;
-    color: black;
+    color: var(--blue);
+    font-family: Roboto;
+    font-weight: 300;
+   
 }
 
-/* styling secondary links */
+/* styling for secondary links */
 .secondaryLinks {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    text-align: left;
 }
 
 .secondaryLinks h3 {
-    margin: 1rem 2rem 1rem 2rem;
-    padding: 1rem;
-    border: solid black 2px;
-    border-radius: 5%;
-    box-shadow: 5px 10px 8px black;
-    transition: ease 400ms;
-    background-color: var(--white);
-}
-
-.secondaryLinks h3:hover {
-    margin: 1rem 2rem 1rem 2rem;
-    padding: 1rem;
-    border: solid black 2px;
-    border-radius: 5%;
-    box-shadow: 5px 10px 8px grey;
-    transition: ease 400ms;
+    margin-bottom: 1rem;
 }
 
 .secondaryLinks a {
     text-decoration: none;
-    color: black;
+    color: var(--blue);
+    font-family: Roboto;
+    font-weight: 300;
 }
 
-/* styling the projects section */
+/*  styling for the projects section */
 .projects {
     display: flex;
     flex-direction: column;
-    background-color: var(--black);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightGray);
+    padding-top: 2rem;;
 }
 
-.projectsHeader {
-    text-align: center;
-}
-
-.projectsHeader h1 {
+.projects h1 {
     font-size: 2.5rem;
-    padding: 5rem 1rem 1rem 1rem;
-    margin-bottom: 3rem;
+    padding: .7rem;
+    margin-bottom: 1.5rem;
+    font-family: Roboto;
+    font-weight: 400;
 }
 
 .projectsContent {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin-bottom: 5rem;
-    line-height: 2rem;
+    align-items: center;
 }
 
 .leftContent {
-    margin: 0rem 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftContent h3 {
+    font-family: Roboto;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.leftContent h4 {
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .leftContent img {
-    max-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
 }
 
-.rightContent {
-    margin: 0rem 3rem 3rem 3rem;
+.leftContent a {
+    text-decoration: none;
+    color: var(--blue);
+    font-family: Roboto;
+    font-weight: 300;
 }
 
-ul {
+#techsUsed {
+    font-family: Roboto;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.leftContent ul li {
     list-style-position: inside;
+    font-family: Roboto;
+    font-weight: 100;
 }
-
-/* styling the about me section */
-.aboutMe {
-    display: flex;
-    flex-direction: column;
-}
-
-.aboutMeHeader {
-    text-align: center;
-}
-
-.aboutMeContent {
-    text-align: center;
-}
-
