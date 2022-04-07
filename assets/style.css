@@ -54,9 +54,7 @@ html {
 }
 
 .homePic img {
-    max-width: 325px;
-    border: var(--darkGrey) solid 2px;
-    border-radius: 50%;
+    max-width: 300px;
     opacity: 95%;
 }
 
@@ -138,6 +136,7 @@ html {
     align-items: center;
     background-color: var(--lightGrey);
     padding-top: 2rem;;
+    padding-bottom: 4rem;
 }
 
 .projects h1 {
@@ -145,7 +144,7 @@ html {
     padding: .7rem;
     margin-bottom: 1.5rem;
     font-family: Roboto;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .projectsContent {
@@ -259,4 +258,55 @@ html {
     list-style-position: inside;
     font-family: Roboto;
     font-weight: 100;
+}
+
+/*  styling and formatting the about me section */
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.aboutMeHeader h1 {
+    font-size: 2.5rem;
+    padding: .7rem;
+    margin-bottom: 1.5rem;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+.aboutMeContent h3 {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.aboutMeContent p {
+    font-family: Roboto;
+    font-weight: 100;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* styling and formatting the footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    transition: ease 480ms;
 }
