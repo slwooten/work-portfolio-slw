@@ -15,10 +15,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600&display=swap" rel="stylesheet">
 </head>
-
+<header>
+    <navbar class="navbar">
+        <nav><a href='#home'>Home</a></nav>
+        <nav><a href='#projects'>Projects</a></nav>
+        <nav><a href='#aboutMe'>About Me</a></nav>
+    </navbar>
+</header>
 <body>
     <main>
-        <section class='home'>
+        <section id='home' class='home'>
+            <div class="homePic">
+                <img src="./assets/images/homepic.jpg" />
+            </div>
             <div class="nameHeader">
                 <h1>Seth Wooten</h1>
                 <h2>Web Developer</h2>
@@ -26,7 +35,6 @@
             <div class="links">
                 <div class="primaryLinks">
                     <h3><a href="#">GitHub ></a></h3>
-                    <h3><a href="#">About me ></a></h3>
                     <h3><a href="#">LinkedIn ></a></h3>
                 </div>
                 <div class="secondaryLinks">
@@ -35,41 +43,82 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section id='projects' class="projects">
             <div class="projectsHeader">
                 <h1>Projects</h1>
             </div>
             <div class="projectsContent">
                 <div class="leftContent">
                     <h3>Project Name</h3>
-                    <img src="https://via.placeholder.com/150" />
-                    <h4><a href="#">Live Preview ></a></h4>
-                    <h4 id="techsUsed">Technologies Used</h4>
-                    <div class="list">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
+                    <div class="projectContainer">
+                        <div class="projectCard">
+                            <img src="https://via.placeholder.com/150" />
+                            <h4><a href="#">Live Preview ></a></h4>
+                            <h4 id="techsUsed">Technologies Used</h4>
+                            <div class="list">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="rightContent">
+                                <h4>My Role</h4>
+                                <p>Here is some sample text to hold place. Here is some sample text to hold place. Here is some sample text to hold place.</p>
+                                <h4>Project Difficulties</h4>
+                                <p>Here is some sample text to hold place.</p>
+                                <h4>Solutions</h4>
+                                <p>Here is some sample text to hold place.</p>
+                                <h4>Notable Features</h4>
+                                <div class="list">
+                                    <ul>
+                                        <li>Login</li>
+                                        <li>Searchbar</li>
+                                        <li>History</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="rightContent">
-                    <h3>My Role</h3>
-                    <p>Here is some sample text to hold place.</p>
-                    <h3>Project Difficulties</h3>
-                    <p>Here is some sample text to hold place.</p>
-                    <h3>Solutions</h3>
-                    <p>Here is some sample text to hold place.</p>
-                    <h3>Notable Features</h3>
-                    <ul>
-                        <li>Login</li>
-                        <li>Searchbar</li>
-                        <li>History</li>
-                    </ul>
+            </div>
+            <div class="projectsContent">
+                <div class="leftContent">
+                    <h3>Project Name</h3>
+                    <div class="projectContainer">
+                        <div class="projectCard">
+                            <img src="https://via.placeholder.com/150" />
+                            <h4><a href="#">Live Preview ></a></h4>
+                            <h4 id="techsUsed">Technologies Used</h4>
+                            <div class="list">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="rightContent">
+                                <h4>My Role</h4>
+                                <p>Here is some sample text to hold place. Here is some sample text to hold place. Here is some sample text to hold place.</p>
+                                <h4>Project Difficulties</h4>
+                                <p>Here is some sample text to hold place.</p>
+                                <h4>Solutions</h4>
+                                <p>Here is some sample text to hold place.</p>
+                                <h4>Notable Features</h4>
+                                <div class="list">
+                                    <ul>
+                                        <li>Login</li>
+                                        <li>Searchbar</li>
+                                        <li>History</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="aboutMe">
+        <section id='aboutMe' class="aboutMe">
             <div class="aboutMeHeader">
                 <h1>About Me</h1>
             </div>
