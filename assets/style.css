@@ -291,6 +291,8 @@ html {
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 1.5rem;
+    max-width: 800px;
+    line-height: 1.5rem;
 }
 
 /* styling and formatting the footer */
