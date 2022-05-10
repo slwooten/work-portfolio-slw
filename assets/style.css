@@ -53,10 +53,9 @@ html {
     margin-top: 1.5rem;
 }
 
-.homePic img {
+/* .homePic img {
     max-width: 300px;
-    opacity: 95%;
-}
+} */
 
 /*  styles headers  */
 .nameHeader { 
@@ -150,10 +149,13 @@ html {
 .projectsContent {
     justify-content: center;
     align-items: center;
+    margin-bottom: 5.5rem;
 }
 
 .projectContainer {
     padding: 1rem;
+    max-width: 50rem;
+    min-width: 50rem;
 }
 
 .projectCard {
@@ -196,8 +198,10 @@ html {
     margin-left: auto;
     margin-right: auto;
     width: 99%;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 500px;
+    max-height: 500px;
+    border: #424245 solid .1rem;
+    border-radius: 5%;
 }
 
 .leftContent a {
@@ -312,3 +316,58 @@ footer a:hover {
     text-decoration: underline;
     transition: ease 480ms;
 }
+
+@media only screen and (max-width: 850px) {
+    .projectContainer {
+        max-width: 40rem;
+        min-width: 40rem;
+    }
+
+    .leftContent img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+  }
+
+@media only screen and (max-width: 690px) {
+    .projectContainer {
+        max-width: 30rem;
+        min-width: 30rem;
+    }
+
+    .leftContent img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+  }
+
+@media only screen and (max-width: 515px) {
+    .projectContainer {
+        max-width: 25rem;
+        min-width: 25rem;
+    }
+
+    .leftContent img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+  }
+
+@media only screen and (max-width: 400px) {
+    .projectContainer {
+        max-width: 20rem;
+        min-width: 20rem;
+    }
+
+    .leftContent img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .rightContent ul li {
+        list-style-position: inside;
+        font-family: Roboto;
+        font-weight: 100;
+        max-width: 15rem;
+    }
+  }
