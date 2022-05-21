@@ -62,20 +62,73 @@ html {
     text-align: center;
 }
 
-.nameHeader h1 {
+/* //////////////////// */
+
+.nameWrapper {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+  }
+  
+  .nameText {
+    width: 11ch;
+    animation: typing 2s steps(11), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3rem;
+  }
+
+/* .jobWrapper {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  
+  .jobText {
+    width: 13ch;
+    /* animation: typing 2s steps(13), blink .5s step-end infinite alternate; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 3px solid; */
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-top: .8rem;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+/* //////////////////// */
+
+/* .nameHeader h1 {
     font-size: 3rem;
     padding: .7rem;
     margin-top: 1.5rem;
     font-family: Roboto;
     font-weight: 400;
-}
+} */
 
-.nameHeader h2 {
+/* .nameHeader h2 {
     padding: .7rem;
     margin-bottom: 1.5rem;
     font-family: Roboto;
     font-weight: 400;
-}
+} */
 
 /*  styling for primary links */
 .primaryLinks {
