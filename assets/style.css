@@ -35,6 +35,10 @@ html {
     color: var(--lightGrey);
 }
 
+.centered {
+    margin-left: 1.9rem;
+}
+
 .navbar a:hover {
     text-decoration: none;
     color: var(--white);
