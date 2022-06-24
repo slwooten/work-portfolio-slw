@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <header>
     <navbar class="navbar">
@@ -22,8 +22,19 @@
         <nav><a href='#aboutMe'>About Me</a></nav>
     </navbar>
 </header>
+
 <body>
     <main>
+        <section class='btn-container'>
+            <div id='light' class='toggle-alignment light-btn'>
+                <!-- <p>Light Mode</p> -->
+                <span>🔆</span>
+            </div>
+            <div id='dark' class='toggle-alignment dark-btn'>
+                <!-- <p>Dark Mode</p> -->
+                <span>🌙</span>
+            </div>
+        </section>
         <section id='home' class='home'>
             <div class="homePic">
                 <img src="assets/images/mePic.png" />
@@ -31,10 +42,10 @@
             <div class="nameWrapper">
                 <div class='nameText'>
                     Seth Wooten
-                  </div>
+                </div>
                 <div class='jobText'>
                     Web Developer
-                  </div>
+                </div>
                 <!-- <h1>Seth Wooten</h1> -->
                 <!-- <h2>Web Developer</h2> -->
             </div>
@@ -44,7 +55,8 @@
                     <h3><a href="https://www.linkedin.com/in/sl-wooten/" target="new">LinkedIn ></a></h3>
                 </div>
                 <div class="secondaryLinks">
-                    <h3><a href="https://drive.google.com/file/d/1Ce9rh1gtS0JNxNdPpsxraPfi5IVsf-Y7/view?usp=sharing" target="new">Resume ></a></h3>
+                    <h3><a href="https://drive.google.com/file/d/1Ce9rh1gtS0JNxNdPpsxraPfi5IVsf-Y7/view?usp=sharing"
+                            target="new">Resume ></a></h3>
                     <h3><a href="mailto:slwooten14@gmail.com" target="new">Email ></a></h3>
                 </div>
             </div>
@@ -76,11 +88,19 @@
                             </div>
                             <div class="rightContent">
                                 <h4>My Role</h4>
-                                <p>While working on Pixel Mixup, I was predominantly responsible for backend functionality while assisting in CSS styling and any troubleshooting associated with it.</p>
+                                <p>While working on Pixel Mixup, I was predominantly responsible for backend
+                                    functionality while assisting in CSS styling and any troubleshooting associated with
+                                    it.</p>
                                 <h4>Project Difficulties</h4>
-                                <p>The overall interactive nature of the canvas/grid used in Pixel Mixup would probably be what I considered the biggest challenge. Ensuring that the canvas worked properly on the client side, while also effectively storing and retrieving the needed data for each canvas challenged my abilities in working with a MERN stack application.</p>
+                                <p>The overall interactive nature of the canvas/grid used in Pixel Mixup would probably
+                                    be what I considered the biggest challenge. Ensuring that the canvas worked properly
+                                    on the client side, while also effectively storing and retrieving the needed data
+                                    for each canvas challenged my abilities in working with a MERN stack application.
+                                </p>
                                 <h4>Solutions</h4>
-                                <p>Providing each user, canvas, and colored tile placed within a canvas with a unique ID allowed us to store and retrieve the data in a way that could be replicated throughout the application. </p>
+                                <p>Providing each user, canvas, and colored tile placed within a canvas with a unique ID
+                                    allowed us to store and retrieve the data in a way that could be replicated
+                                    throughout the application. </p>
                                 <h4>Notable Features</h4>
                                 <div class="list">
                                     <ul>
@@ -195,8 +215,9 @@
         </section>
     </main>
 </body>
-<footer>
+<footer id='footer' class=''>
     <a href="#">Back to top</a>
 </footer>
+<script src="/assets/script.js"></script>
 
 </html>

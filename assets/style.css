@@ -4,7 +4,10 @@
     --lightGrey: #f5f5f7;
     --midGrey: #fff; 
     --blue: #027fff; 
-    --darkGrey: #424245;
+    --darkGrey: #161b22;
+    --btnColor: #21262d;
+    --darkModeBg: #0d1117;
+    --darkModeBgDark: #0a0d12;
 }
 
 * {
@@ -14,6 +17,48 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+.btn-container {
+    display: flex;
+    font-family: Roboto;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.toggle-alignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.light-btn {
+    background-color: white;
+    color: var(--btnColor);
+    border: 2px solid var(--midGrey);
+    border-radius: 50%;
+    margin: .3rem;
+}
+
+.light-btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: ease 300ms;
+}
+
+.dark-btn {
+    background-color: var(--darkModeBg);
+    color: var(--lightGrey);
+    border: 2px solid var(--darkModeBg);
+    border-radius: 50%;
+    margin: .3rem;
+}
+
+.dark-btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: ease 300ms;
 }
 
 /*  styling/formatting the navbar */
@@ -327,7 +372,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 
 .aboutMeHeader h1 {
@@ -373,6 +418,27 @@ footer a:hover {
     text-decoration: underline;
     transition: ease 480ms;
 }
+
+/* ///////////////////////// */
+/* Styling and Classes for Dark Mode Toggle */
+
+.dark-mode-bg {
+    background-color: var(--darkModeBg);
+}
+
+.dark-mode-bg-dark {
+    background-color: var(--darkModeBgDark);
+}
+
+.dark-mode-text {
+    color: var(--lightGrey);
+}
+
+.dark-mode-card {
+    background-color: var(--btnColor);
+}
+
+/* ////////////////////////// */
 
 @media only screen and (max-width: 850px) {
     .projectContainer {
