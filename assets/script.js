@@ -1,5 +1,3 @@
-console.log("Connected!");
-
 const lightBtn = document.querySelector('#light');
 const darkBtn = document.querySelector('#dark');
 
@@ -47,7 +45,6 @@ const lightBtnClick = () => {
   if (footer.classList.contains('dark-mode-bg')) {
     footer.classList.remove('dark-mode-bg');
   }
-  console.log('Light button clicked!');
 };
 
 const darkBtnClick = () => {
@@ -85,7 +82,6 @@ const darkBtnClick = () => {
   if (!footer.classList.contains('dark-mode-bg')) {
     footer.classList.add('dark-mode-bg');
   }
-  console.log('Dark button clicked!');
 };
 
 lightBtn.addEventListener('click', lightBtnClick);
